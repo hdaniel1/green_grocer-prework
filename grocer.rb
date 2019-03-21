@@ -59,6 +59,7 @@ def checkout(cart, coupons)
     stats.each do |stats, info|
       if stats[:count] > 0
       new.push(stats[:price] * stats[:count])
+      end
     end
   end
   new
