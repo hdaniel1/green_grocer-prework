@@ -62,7 +62,8 @@ def checkout(cart, coupons)
       end
     end
   end
-  binding.pry
+
+  new = new.uniq
   new.uniq each do |item|
     total += item
   end
