@@ -59,5 +59,5 @@ def checkout(cart, coupons)
       total += stats[:price]
     end
   end
-  new
+  total
 end
