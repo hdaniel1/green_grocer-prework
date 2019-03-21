@@ -60,5 +60,5 @@ def checkout(cart, coupons)
       new.push(stats[:price] * stats[:count])
     end
   end
-  total
+  new
 end
