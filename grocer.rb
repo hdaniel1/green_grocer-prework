@@ -44,7 +44,7 @@ end
 def apply_clearance(cart)
   # code here
   cart.each do |item, details|
-    if details[:clearance] == true 
+    if details[:clearance] == true
       details[:price] -= details[:price] * 0.2
     end
   end
@@ -55,7 +55,7 @@ def checkout(cart, coupons)
   # code here
   new = []
   apply_clearance(apply_coupons(consolidate_cart(cart), coupons)).each do |item, stats|
-    #binding.pry
+    if stats[:count] > 0
     new.push(stats[:price])
   end
   new
