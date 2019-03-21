@@ -55,7 +55,7 @@ def checkout(cart, coupons)
   # code here
   new = []
   apply_coupons(apply_clearance(consolidate_cart(cart).each), coupons) do |item, stats|
-    binding.pry
+    #binding.pry
     new.push(stats[:price])
   end
   new
