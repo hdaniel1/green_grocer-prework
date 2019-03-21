@@ -291,7 +291,7 @@ describe "Grocer" do
         expect(checkout(cart, coupons)).to eq(33.00)
       end
 
-      
+
 
     describe "clearance:" do
 
