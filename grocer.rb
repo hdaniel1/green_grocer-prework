@@ -56,7 +56,8 @@ def checkout(cart, coupons)
   new = []
   apply_clearance(apply_coupons(consolidate_cart(cart), coupons)).each do |item, stats|
     if stats[:count] > 0
-    new.push(stats[:price])
+      new.push(stats[:price])
+    end
   end
   new
 end
