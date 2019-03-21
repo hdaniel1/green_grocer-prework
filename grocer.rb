@@ -59,7 +59,6 @@ def checkout(cart, coupons)
     stats.each do |data, info|
       if stats[:count] > 0
       new.push(stats[:price])
-      binding.pry
       end
     end
   end
