@@ -34,6 +34,7 @@ def apply_coupons(cart, coupons)
         coupon_hash[:clearance] = cart[item][:clearance]
         coupon_hash[:count] += 1
         cart["#{item} W/COUPON"] = coupon_hash
+        binding.pry
       end
     end
   end
