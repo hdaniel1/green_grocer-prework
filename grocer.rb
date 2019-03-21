@@ -62,5 +62,8 @@ def checkout(cart, coupons)
       end
     end
   end
-  new
+
+  new.uniq() each do |item|
+    total += item
+  end
 end
